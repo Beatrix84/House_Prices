@@ -62,12 +62,12 @@ vif(reg.model)
 
 #make predictions
 predictions <- predict.lm(reg.model, test)
-realpredictions <- exp(predictions)
-realpredictions
-test$SalePrice <- realpredictions
+SalePrice <- exp(predictions)
+SalePrice
+test$SalePrice <- SalePrice
 
 nrow(test)
-length(realpredictions)
+length(SalePrice)
 
 # on choisit le dossier dans lequel on veut sauver le fichier
 
@@ -75,7 +75,7 @@ setwd("C:/Users/utilisateur/Desktop/HousePrices")
 
 #on crée un dataframe avant de le sauver
 
-prediction<-data.frame(realpredictions)
+prediction<-data.frame(SalePrice)
 
 # on utilise la fonction write.table, voir ?write.table
 # ne pas oublier le .csv à la fin du nom du fichier excel "data.csv"

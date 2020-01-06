@@ -61,7 +61,7 @@
 
  * House_prices_challenge_Keras_1.ipynb
    - Kaggle public score : 0.19288
-   - Using the dataset modified in 'HousePrices_prepdata.R', categorical features were transformed in numericals and after correlation matrix, only 8 features were used    in th neural network model.
+   - Using the dataset modified in 'HousePrices_prepdata.R', categorical features were transformed in numericals and after correlation matrix, only 10 features were used in the neural network model.
  * KerasPrediction_Exploration_Selection.ipynb
    - Kaggle score : 0.18967
    - We took the modifications done on the 'Data_Exploration_Selection.ipynb' notebook to train the dataset with NN model using Keras.
@@ -76,7 +76,7 @@
    - Keras model on just numerical features with log on the SalePrice
  * HousePrices_Keras_10features.ipynb
    - Kaggle score : 0.17197
-   - Keras model with the first 10 more correlated numerical features
+   - Keras model with the first 10 more correlated numerical features, creation of a new feature, only 8 features used for the neural network model.
  * HousePrices_Keras-Allfeat-ohe.ipynb
    - Kaggle score : 0.15647
    - Keras model on the OneHotEncoder dataset

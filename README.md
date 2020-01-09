@@ -1,4 +1,5 @@
 # How to start the project
+* Download datasets from Kaggle challenge House Prices: Advanced Regression Techniques
 
 ## Create a docker folder with:
 * docker.compose.yml

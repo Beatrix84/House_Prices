@@ -4,7 +4,9 @@ library(ggplot2)
 set.seed(3456)
 
 
-# Chargement
+# Chargement du testset
+# trainfull est déjà dans l'environnement de travail si l'évaluation sur validation a été faite
+
 test <- read.csv("C:/Users/utilisateur/Desktop/handson-ml2/HousePrices/test_ohe.csv")
 
 # Dimensions

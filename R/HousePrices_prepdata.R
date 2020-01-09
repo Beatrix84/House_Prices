@@ -5,7 +5,7 @@ library(FactoMineR)
 library(factoextra)
 
 # Chargement
-train <- read.csv("C:/Users/utilisateur/Desktop/HousePrices/trainfull.csv")
+train <- read.csv("C:/Users/utilisateur/Desktop/handson-ml2/HousePrices/trainfull.csv")
 
 # Dimensions
 dim(train)
@@ -203,7 +203,10 @@ qplot(MSZoning, logSalePrice, data=datareg,
 # Diagnostic
 plot(reg1, 1)
 # Les observations 826 et 633 sont trop turbulentes
-# Eventuellement les éliminer et reprendre le calcul
+# Eventuellement les éliminer et reprendre le 
 
-# Autres outils de rÃ©gression: voir fiches résumé page 18
+# Exporter le trainfull avec juste 55 features.
 
+setwd("C:/Users/utilisateur/Desktop/HousePrices/R")
+trainfull<-data.frame(datareg)
+write.csv(trainfull, "trainfull_55feat.csv")

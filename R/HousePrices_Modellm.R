@@ -2,7 +2,13 @@
 library(dplyr)
 library(ggplot2)
 
-# Chargement
+# Chargement du testset
+
+# trainfull est déjà dans l'environnement de travail si l'évaluation sur validation a été faite
+
+#Sinon il faut le charger et refaire les modifications en remplaçant les NA par des None
+#trainfull <- read.csv("C:/Users/utilisateur/Desktop/handson-ml2/HousePrices/R/trainfull_55feat.csv")
+
 test <- read.csv("C:/Users/utilisateur/Desktop/HousePrices/test.csv")
 
 # Dimensions
@@ -54,7 +60,7 @@ reg.model <- lm(logSalePrice ~ LotArea + Street + LandContour + LotConfig +
                    RoofStyle + Foundation + BsmtQual + BsmtCond + 
                    BsmtExposure + BsmtUnfSF + TotalBsmtSF + Heating + HeatingQC + 
                    CentralAir + FullBath + BedroomAbvGr + 
-                   GarageType + GarageArea + SaleCondition + FireplaceQu + PoolQC, data=datareg)
+                   GarageType + GarageArea + SaleCondition + FireplaceQu + PoolQC, data=trainfull)
 
 # summarize the fit
 summary(reg.model)
